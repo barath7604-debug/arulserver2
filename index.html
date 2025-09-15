@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARUL'S SERVER</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #0f0f1a;
+      color: #00f0ff;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      text-shadow:
+        0 0 10px #00f0ff,
+        0 0 20px #00f0ff,
+        0 0 30px #00f0ff,
+        0 0 40px #00f0ff;
+      margin-bottom: 2rem;
+    }
+
+    .folder-container {
+      display: flex;
+      gap: 3rem;
+    }
+
+    .folder {
+      background: #111126;
+      border: 2px solid #00f0ff;
+      border-radius: 10px;
+      padding: 2rem 3rem;
+      cursor: pointer;
+      text-align: center;
+      box-shadow:
+        0 0 10px #00f0ff99,
+        0 0 20px #00f0ff88;
+      transition: background 0.3s, transform 0.3s;
+      width: 150px;
+      user-select: none;
+    }
+
+    .folder:hover {
+      background: #00f0ff22;
+      transform: scale(1.1);
+      box-shadow:
+        0 0 20px #00f0ff,
+        0 0 40px #00f0ff;
+    }
+
+    .folder-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #00f0ff;
+    }
+
+    .folder-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    a.folder {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>ARUL'S SERVER</h1>
+
+  <div class="folder-container">
+    <a class="folder" href="prompt1.zip" download>
+      <div class="folder-icon">📁</div>
+      <div class="folder-title">Prompt 1</div>
+    </a>
+    <a class="folder" href="prompt2.zip" download>
+      <div class="folder-icon">📁</div>
+      <div class="folder-title">Prompt 2</div>
+    </a>
+    <a class="folder" href="prompt3.zip" download>
+      <div class="folder-icon">📁</div>
+      <div class="folder-title">Prompt 3</div>
+    </a>
+  </div>
+</body>
+</html>
